@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* starting Navebar.css */
+
+.navbar-brand{
+  background-color: rgb(191, 241, 121);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
