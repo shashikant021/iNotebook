@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 
 const About = () => {
+
   return (
     <div className='App'>
-      <h3>This is About Page</h3>
+      <h3>This is About page</h3>
     </div>
   )
 }
