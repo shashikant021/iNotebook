@@ -4,7 +4,7 @@ import { useNavigate  } from 'react-router-dom'
 
 const Login = (props) => {
     const [credentials, setCredentials] = useState({email: "", password: ""}) 
-    const navigate = useNavigate();
+    let navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -21,11 +21,12 @@ const Login = (props) => {
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 
             // history.push("/");
+            props.showAlert("Logged in  Successfully", "Success");
             navigate('/');
 
         }
         else{
-            alert("Invalid credentials");
+            props.showAlert("Invalid Details", "danger");
         }
     }
 
@@ -34,7 +35,8 @@ const Login = (props) => {
     }
 
     return (
-        <div>
+        <div className='mt-3'>
+            <h3> Login to Continue to iNotebook</h3>
             <form  onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>
