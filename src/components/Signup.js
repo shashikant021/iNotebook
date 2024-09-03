@@ -36,24 +36,24 @@ const Signup = (props) => {
   }
 
   return (
-    <div className='container mt-2'>
+    <div className='container log_in'>
        <h3> Create an account to Use iNotebook</h3>
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+          <label htmlFor="name" className="form-label fs-5">Name</label>
           <input type="name" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
+          <label htmlFor="email" className="form-label fs-5">Email address</label>
           <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" />
           <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div className="mb-3">
-          <label htmlFor="Password" className="form-label">Password</label>
+          <label htmlFor="Password" className="form-label fs-5">Password</label>
           <input type="password" className="form-control" id="Password" name='password' onChange={onChange} minLength={5} required/>
         </div>
         <div className="mb-3">
-          <label htmlFor="cPassword" className="form-label">Confirm Password</label>
+          <label htmlFor="cPassword" className="form-label fs-5">Confirm Password</label>
           <input type="password" className="form-control" id="cPassword" name='cpassword' onChange={onChange} minLength={5} required/>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
