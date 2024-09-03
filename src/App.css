@@ -41,10 +41,78 @@
 /* starting Navbar.css */
 
 .navbar-brand{
-  background-color: rgb(191, 241, 121);
+  background-color: #67e0ae;
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
 }
 
+.container-fluid{
+  background-color: #d5e3e7;
+}
+
 /* end of Navbar.css */
+
+/* starting of Login.css & Signup.css */
+
+.form-control{
+  width: 100%;
+  margin: 2px;
+}
+
+.log_in{
+  border: 2px solid rgb(174, 225, 174);
+  padding: 40px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d5e3e7;
+}
+
+.log_in h3{
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* enging of Login.css & Signup.css */
+
+/* starting of AddNote.css part */
+
+.add_note{
+  border: 2px solid rgb(174, 225, 174);
+  padding: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d5e3e7;
+}
+
+.add_note h2{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* end of AddNote.css part */
+
+/* starting of notes.css part */
+
+.notes{
+  border: 2px solid rgb(174, 225, 174);
+  padding: 10px;
+  width: 100%;
+  background-color: #ced2d3;
+}
+
+.notes h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal-content{
+  background-color: #8ea593;
+}
+
+/* end of notes.css part */
+
+
+

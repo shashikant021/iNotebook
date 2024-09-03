@@ -52,15 +52,15 @@ const Notes = (props) => {
                         <div className="modal-body">
                             <form className="my-3">
                                 <div className="mb-3">
-                                    <label htmlFor="title" className="form-label">Title</label>
+                                    <label htmlFor="title" className="form-label fs-5">Title</label>
                                     <input type="text" className="form-control" id="etitle" name="etitle" value={note.etitle} aria-describedby="emailHelp" onChange={onChange} minLength={5} required/>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="description" className="form-label">Description</label>
-                                    <input type="text" className="form-control" id="edescription" name="edescription" value={note.edescription} onChange={onChange} minLength={5} required/>
+                                    <label htmlFor="description" className="form-label fs-5">Description</label>
+                                    <textarea type="text" className="form-control" id="edescription" name="edescription" value={note.edescription} onChange={onChange} minLength={5} required/>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="tag" className="form-label">Tag</label>
+                                    <label htmlFor="tag" className="form-label fs-5">Tag</label>
                                     <input type="text" className="form-control" id="etag" name="etag" value={note.etag} onChange={onChange} />
                                 </div>
  
@@ -74,8 +74,8 @@ const Notes = (props) => {
                 </div>
             </div>
 
-            <div className="row my-3">
-                <h2>You Notes</h2>
+            <div className="row my-3 notes">
+                <h2>Your Notes</h2>
                 <div className="container mx-2"> 
                 {notes.length===0 && 'No notes to display'}
                 </div>
