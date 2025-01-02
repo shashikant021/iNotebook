@@ -1,7 +1,7 @@
 import React, {useState}  from 'react'
 import { useNavigate  } from 'react-router-dom'
-  const host = "http://localhost:5000";
-  // const host = "https://inotebook-backend-m8bt.onrender.com";
+  // const host = "http://localhost:5000";
+  const host = "https://inotebook-j8td.onrender.com";
 
 const Signup = (props) => {
 
