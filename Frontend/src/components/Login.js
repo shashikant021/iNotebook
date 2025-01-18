@@ -43,7 +43,7 @@ const Login = (props) => {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label fs-5">
-            Email address
+            Email Address
           </label>
           <input
             type="email"

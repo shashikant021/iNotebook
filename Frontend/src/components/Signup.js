@@ -31,7 +31,14 @@ const Signup = (props) => {
       navigate("/");
       props.showAlert("Account Created Successfully", "Success");
     } else {
-      props.showAlert("Invalid credentials", "danger");
+      if (json.error === "Sorry a user with this email already exists") {
+        props.showAlert(
+          "This email is already registered. Please use another email.",
+          "danger"
+        );
+      } else {
+        props.showAlert("Invalid credentials", "danger");
+      }
     }
   };
 
@@ -58,7 +65,7 @@ const Signup = (props) => {
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label fs-5">
-            Email address
+            Email Address
           </label>
           <input
             type="email"
